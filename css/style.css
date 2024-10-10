@@ -234,6 +234,15 @@ section.hero video {
   opacity: 0.4;
 }
 
+section.hero video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.4;
+}
+
 section.hero .content {
   position: absolute;
   color: #fff;
@@ -254,6 +263,10 @@ section.hero .content p {
   color: #fff;
   width: 50%;
 }
+
+
+
+
 
 section.about,
 section.about2 {
