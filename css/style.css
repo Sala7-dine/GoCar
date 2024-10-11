@@ -78,7 +78,10 @@ section,
 summary,
 time,
 mark,
-audio,
+audio
+
+
+ 
 
 video {
   margin: 0;
@@ -242,6 +245,23 @@ section.hero video {
   min-height: 100%;
   opacity: 0.4;
 }
+section.hero img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.4;
+}
+
+section.hero img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.4;
+}
 
 section.hero .content {
   position: absolute;
@@ -352,9 +372,9 @@ section.adv .icon-container {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 section.adv .icon-container > div {
@@ -383,7 +403,7 @@ section.adv .icon-container > div div h5 {
 
 section.adv .icon-container > div div p {
   font-weight: 200;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.2;
   color: #fff;
   word-break: break-all;
@@ -423,7 +443,7 @@ section.gallery p {
   font-size: 0.9rem;
   line-height: 1.2;
   color: #fff;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 45px;
   opacity: 0.4;
@@ -531,7 +551,7 @@ section.map h2 {
   color: #fff;
   font-family: "Playfair Display", serif;
   font-size: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;    
 }
 
 section.map h2 span {
@@ -656,6 +676,7 @@ header nav .showClose {
 
 /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .container {
     max-width: 720px;
@@ -797,7 +818,7 @@ header nav .showClose {
     padding-top: 30px;
   }
 }
-
+ 
 @media (max-width: 575px) {
   section.adv .icon-container {
     -ms-grid-columns: 1fr;

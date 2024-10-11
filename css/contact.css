@@ -225,7 +225,7 @@ section.hero {
   position: relative;
 }
 
-section.hero video {
+section.hero img {
   position: absolute;
   right: 0;
   bottom: 0;

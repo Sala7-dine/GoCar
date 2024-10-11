@@ -9,6 +9,107 @@
     <meta name="keywords" content="cars, rent, online" />
     <meta name="author" content="Hamza Bouchikhi" />
     <link rel="stylesheet" href="../css/style.css" />
+    
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+
+      .filter {
+        display: flex;
+        justify-content: center;
+        max-width: 1024px;
+        margin: 20px auto;
+      }
+
+      .button {
+          padding: 14px 32px;
+          margin-right: 18px;
+          cursor: pointer;
+          background-color: #12076e;
+          color: white;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: bold;
+          border: 0;
+          outline: none;
+        }
+            
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+       
+      }
+      .img{
+          width: 100%;
+      }
+      
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(163, 163, 163, 0.2);
+        width: 100%;
+        text-align: center;   
+        margin: 10px;
+        background-color: hsl(0, 0%, 100%);
+        backdrop-filter: blur(10px);
+      }
+      
+
+      section.gallery p{
+        opacity: 1;
+        color : black; 
+        
+      }
+      .card button {
+        outline: 0;
+        padding: 12px;
+        background-color: #000;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        
+      }
+      
+      .card button:hover {
+        opacity: 0.7;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .row {
+        margin: 0 -5px;
+        padding: 0 200px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      
+      /* Responsive columns */
+      @media screen and (max-width: 1000px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      
+      
+      </style>
+
   </head>
   <body style="overflow-x: hidden">
     <header class="header">
@@ -29,13 +130,7 @@
     <section class="hero">
       <div class="container">
         <div>
-          <video
-            src="../images/video.mp4"
-            type="video/mp4"
-            autoplay
-            muted
-            loop
-          ></video>
+          <img src="/images/bgcar.jpg" alt="">
         </div>
         <div class="content">
           <h1>The Things That Make Sense</h1>
@@ -49,3 +144,172 @@
         </div>
       </div>
     </section>
+
+    <section class="adv">
+      <h2>Portfolio</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        facilis placeat at doloremque velit fugit possimus, quasi, magni saepe
+        qui quas, nostrum fuga praesentium autem eius perspiciatis optio eaque
+        et?
+      </p>
+
+      <div>
+        <div class="icon-container container">
+          <div>
+            <div>
+              <h5>Safety</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quam ipsam voluptas sint ipsum officiis temporibus quos sunt omnis nesciunt excepturi error ullam amet placeat dolores blanditiis similique quasi totam a voluptate, eaque culpa maxime modi necessitatibus. Eum illo voluptates maiores id eligendi dignissimos non, placeat similique nobis cupiditate velit!</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h5>Productivity</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloremque veritatis nihil error sapiente quibusdam, reprehenderit, quae quod harum rem ducimus quidem molestias voluptate fugit sequi possimus necessitatibus alias architecto veniam at nesciunt aliquam illo temporibus? Maiores nihil impedit quidem consectetur necessitatibus dolorum quaerat delectus veniam, optio, natus non aliquid!</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h5>Statistic</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, consequatur, reiciendis nulla enim amet doloribus dolorem quas, consequuntur vitae ipsam repellendus voluptas atque sint in! Omnis ab non laborum quasi, veritatis, repellat aliquam voluptas similique in esse totam quaerat! Similique explicabo tenetur hic laboriosam dignissimos nihil praesentium labore in quibusdam!</p>
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <h2>Take A <span>Look</span></h2>
+
+
+      <div class="filter">
+        <button class="button button_all" data-filter="all">All</button>
+        <button class="button button_price" data-filter="clothing">Prix</button>
+        <button class="button button_dispo" data-filter="decor">Disponibilite</button>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">	
+              <img src="../images/bgcar.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Mircedes</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">	
+              <img src="../images/bgcar.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Mircedes</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        <div class="column">
+          <div class="card">	
+              <img src="../images/bgcar.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Mircedes</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        <div class="column">
+          <div class="card">	
+              <img src="../images/bgcar.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Mircedes</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        <div class="column">
+          <div class="card">	
+              <img src="../images/bgcar.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Mircedes</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        <div class="column">
+          <div class="card">	
+              <img src="../images/bgcar.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Mircedes</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        <div class="column">
+          <div class="card">	
+              <img src="../images/bgcar.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Mircedes</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">	
+              <img src="../images/bgcar.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Mircedes</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">	
+              <img src="../images/bgcar.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Mircedes</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container">
+      <div class="footer-inner">
+        <div>
+          <h4>About Us</h4>
+          <hr />
+          <ul class="footer-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <hr />
+          <ul class="footer-menu">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Advertising</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal Notice</h4>
+          <hr />
+          <ul class="footer-menu">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>All Rights Reserveed - GoCar 2020</p>
+    </footer>
+
+</html>
